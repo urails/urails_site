@@ -1,0 +1,64 @@
+legend
+  font-weight: bold
+
+label
+  display: block
+  +fontsize(.9)
+  font-weight: bold
+  margin-bottom: 6px
+  color: hsl(0,0%,30%)
+input
+  background: white
+  padding: 5px
+  height: 30px
+  border: 1px solid hsl(0,0%,80%)
+  font-size: $font-size
+  font-family: $sans
+  +box-shadow(inset 0px 1px 3px hsla(0,0%,0%,.10))
+  +box-sizing(border-box)
+  +border-radius
+
+.inline-hints
+  font-style: italic
+  +fontsize(.9)
+  color: hsl(0,0%,40%)
+
+// Overrides for individual form elements
+.boolean
+  margin: 5px 0
+  label
+    display: inline
+    +fontsize(.9)
+  input
+    padding: 5px
+    height: $line-height
+    vertical-align: middle
+
+input[type=submit], button
+  padding: 5px 10px
+  font-size: 14px
+  line-height: 20px
+  color: white
+  border: 1px solid
+  border-color: hsla(0, 0%, 0%, 0.1) hsla(0, 0%, 0%, 0.1) hsla(0, 0%, 0%, 0.25)
+  text-shadow: 0 -1px 0 hsla(0,0%,0%,.3)
+  vertical-align: middle
+  +background(linear-gradient(hsl(2, 81%, 65%), hsl(3, 60%, 46%)))
+  +box-shadow(inset 0 1px 0 hsla(0, 100%, 100%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.05))
+  +border-radius
+
+
+// General form styling
+li.input
+  margin: 10px 0
+
+// Custom form types
+.fullpage
+  input
+    width: 400px
+  input[type=submit], input[type=checkbox]
+    width: auto
+
+  h3
+    font-weight: bold
+    margin: 5px 0
