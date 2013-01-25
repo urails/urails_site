@@ -6,6 +6,10 @@ $line-height: $font-size * 1.2
 
 $mono: Menlo, Monaco, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace
 
+@mixin fontsize($size)
+  font-size: $font-size * $size
+  line-height: $line-height * $size
+
 .blogpost, .article, .page
   section.content
     %headings
