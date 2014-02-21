@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @blog.title
+p
+  strong Body:
+  = @blog.body
+p
+  strong Description:
+  = @blog.description
+
+= link_to 'Edit', edit_blog_path(@blog)
+'|
+= link_to 'Back', blogs_path
