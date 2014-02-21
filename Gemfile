@@ -51,6 +51,7 @@ gem "pry-rails"
 gem "awesome_print"
 group :development, :test do
   gem "guard"
+  gem "rspec-rails"
 end
 
 group :development do
@@ -61,7 +62,6 @@ group :test do
   gem "factory_girl_rails"
   gem "capybara"
   gem "guard-rspec"
-  gem "rspec-rails"
   gem "faker"
 end
 
