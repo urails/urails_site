@@ -1,0 +1,53 @@
+@import 'bourbon'
+@import 'neat'
+
+@import 'partials/colors'
+
+body
+  background: $grey
+
+#header
+  background: $white
+  padding-top: 20px
+  margin-bottom: em(20)
+
+  h1
+    color: $red
+    margin: 0
+    font-size: 3em
+    margin-bottom: 20px
+
+#nav
+  background: $darkred
+  height: em(40)
+
+  ul
+    list-style-type: none
+    margin-top: 0
+    margin-bottom: 0
+    padding: 0
+    display: flex
+
+  li
+    height: em(40)
+
+
+    a
+      line-height: em(40)
+      padding: 0 em(10)
+      color: $white
+      font-weight: bold
+      text-decoration: none
+    
+    &:first-child a
+      padding-left: 0
+
+.container
+  +outer-container
+
+#posts
+  +span-columns(9)
+  background: $white
+#sidebar
+  +span-columns(3)
+  background: $white
